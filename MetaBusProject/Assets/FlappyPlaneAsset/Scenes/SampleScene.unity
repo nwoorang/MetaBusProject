@@ -263,7 +263,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 211667964}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -411,7 +411,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 252714227}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 269305462}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -653,7 +653,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 334267986}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -1005,7 +1005,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 465472866}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -1149,7 +1149,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 474212727}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -1449,7 +1449,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 576751488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -1752,7 +1752,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 723516650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -2060,7 +2060,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 843072767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -2414,7 +2414,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1010452947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -2558,7 +2558,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1077963291}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -2955,7 +2955,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1282037193}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -3099,7 +3099,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1340146963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -3323,7 +3323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1407123109}
   m_Layer: 0
-  m_Name: ' Obstacle'
+  m_Name: OutlineObstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4525,7 +4525,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1968489873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -4669,7 +4669,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1973697303}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -4971,7 +4971,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2075394603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -5229,7 +5229,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2142702728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
@@ -5373,7 +5373,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2142760968}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c58df4f0d1ba40bb3e60e674cbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 438af1b04b7f97245b2fd1597b3b01a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPos: {fileID: 1509230799}
