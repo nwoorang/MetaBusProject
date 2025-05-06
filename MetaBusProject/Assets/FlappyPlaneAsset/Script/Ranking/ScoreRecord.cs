@@ -6,6 +6,13 @@ using UnityEngine;
 public class ScoreRecord
 {
     public string playerName;
-    public int score;
-    
+    public float score;
+    public int combo;
+    public float time;
+    public void SetData(float score=0,int combo=0,float time=0)
+    {
+                this.score = score;
+        this.combo = combo;
+        this.time  = time;
+    }
 }

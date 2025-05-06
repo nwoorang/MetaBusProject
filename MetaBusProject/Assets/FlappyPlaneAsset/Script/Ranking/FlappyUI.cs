@@ -19,7 +19,7 @@ public class FlappyUI : MonoBehaviour
 
     void Start()
     {
-       // gameOverUI.SetActive(false);
+       gameOverUI.SetActive(false);
         dm = DifficultyManager.Instance;
     }
     public void LoadLobbyScene()
@@ -36,8 +36,6 @@ public class FlappyUI : MonoBehaviour
     {
         sum += 0.01f + (dm.combo * dm.CurrentScoreRate) / 1000;
         RealTimescoreTxt.text = sum.ToString("N0");
-
-
     }
 
     public void Endgame()
@@ -48,4 +46,6 @@ public class FlappyUI : MonoBehaviour
         timeTxt.text = dm.elapsedTime.ToString("N1");
 
     }
+
+    
 }

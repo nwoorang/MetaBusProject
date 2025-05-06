@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 
     public float flapForce = 6f;
     float forwardSpeed;
-    public bool isDead = false;
+    public bool isDead{ get; private set; } = false;
     float deathCooldown = 0f;
 
     bool isFlap = false;

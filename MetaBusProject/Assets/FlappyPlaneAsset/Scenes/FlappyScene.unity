@@ -6428,8 +6428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flapForce: 6
-  isDead: 0
-  godMode: 1
+  godMode: 0
   flappyUI: {fileID: 1867183116}
 --- !u!50 &1509230801
 Rigidbody2D:

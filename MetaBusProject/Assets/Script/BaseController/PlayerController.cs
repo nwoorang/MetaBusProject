@@ -9,6 +9,8 @@ public class PlayerController : BaseController
 private GameManager gameManager;
 private Camera cam;
 
+private bool collisionCheck=false;
+private GameObject obj;
 public void Init(GameManager gameManager)
 {
     this.gameManager = gameManager; // 게임 매니저 연결
@@ -60,6 +62,29 @@ void OnFire(InputValue inputValue)
     isAttacking = inputValue.isPressed;
 }
 
+    void OnInteract(InputValue inputValue)
+    {
+        if (collisionCheck)
+        {
+            // obj에 붙어있는 NpcInteraction 스크립트 가져와서 Interact 호출
+            var interactable = obj.GetComponent<IInteractable>();
+            if (interactable != null)
+            {
+                interactable.Interact();
+            }
+        }
+    }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        collisionCheck = true;
+        obj = collision.gameObject;
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        collisionCheck = false;
+        obj = null;
+    }
     public override void Death()
 {
     base.Death();
