@@ -14,8 +14,11 @@ public class Player : MonoBehaviour
 
     public bool godMode = false;
 
+    DifficultyManager dm; //DifficultyManager 캐싱
+    public FlappyUI flappyUI;
     void Start()
     {
+        dm = DifficultyManager.Instance;
         animator = transform.GetComponentInChildren<Animator>();
         _rigidbody = transform.GetComponent<Rigidbody2D>();
 
@@ -30,7 +33,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void Update()
+    void Update() //키 입력 받거나 사망처리후 UI창 생성
     {
         if (isDead)
         {
@@ -38,8 +41,7 @@ public class Player : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
                 {
-                   
-
+                   flappyUI.Endgame();
                 }
             }
             else
@@ -56,13 +58,13 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void FixedUpdate()
+    public void FixedUpdate() //물리작용부분
     {
         if (isDead)
             return;
 
         Vector3 velocity = _rigidbody.velocity;
-        velocity.x = DifficultyManager.Instance.CurrentPlayerSpeed;
+        velocity.x = dm.CurrentPlayerSpeed;
         if (isFlap)
         {
             velocity.y += flapForce;
@@ -75,7 +77,7 @@ public class Player : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision) //사망후 지연시간
     {
         if (godMode)
             return;

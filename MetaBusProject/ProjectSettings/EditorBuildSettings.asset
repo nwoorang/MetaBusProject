@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/FlappyPlaneAsset/Scenes/FlappyScene.unity
+    guid: b3f49f6854fb962488ca0df1e7bb9831
+  - enabled: 1
+    path: Assets/Scenes/LobbyScene.unity
+    guid: 3339b8337bded9147a921a4496aa1c5e
   m_configObjects: {}

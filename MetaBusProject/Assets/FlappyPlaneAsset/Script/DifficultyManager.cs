@@ -11,9 +11,9 @@ public class DifficultyManager : MonoBehaviour
     public float CurrentGapSize { get; private set; }=12; //위 아래 사이 구멍 크기
     public float CurrentScoreRate { get; private set; }=1; //점수
 
+    public int combo{ get; private set; } = 0;
 
-
-    private float elapsedTime = 0f;
+     public float elapsedTime{ get; private set; } = 0f;
 
     void Awake()
     {
@@ -24,10 +24,6 @@ public class DifficultyManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("CurrentPlayerSpeed-"+CurrentPlayerSpeed);
-        Debug.Log("CurrentSpawnInterval-"+CurrentSpawnInterval);
-        Debug.Log("CurrentGapSize-"+CurrentGapSize);
-        Debug.Log("CurrentScoreRate-"+CurrentScoreRate);
         elapsedTime += Time.deltaTime;
         float t = Mathf.Clamp01(elapsedTime / difficultyData.maxDifficultyTime);//maxDifficultyTime 난이도에 따른 시간가속
 
@@ -50,5 +46,10 @@ public class DifficultyManager : MonoBehaviour
             difficultyData.maxScoreRate,
             difficultyData.scoreRateCurve.Evaluate(t));
 
+    }
+
+    public void AddCombo()
+    {
+        combo++;
     }
 }

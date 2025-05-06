@@ -20,4 +20,11 @@ public class Obstacle : MonoBehaviour
                 pos2.y = pos.y - DifficultyManager.Instance.CurrentGapSize;
                 DownObstacle.transform.position = pos2;
         }
+
+        void OnTriggerExit2D(Collider2D collision)
+        {
+                Player player = collision.GetComponent<Player>();
+                if (player != null)
+                        DifficultyManager.Instance.AddCombo();
+        }
 }

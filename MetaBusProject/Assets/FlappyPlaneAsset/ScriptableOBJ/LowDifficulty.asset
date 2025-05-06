@@ -108,12 +108,12 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  maxDifficultyTime: 40
-  minPlayerSpeed: 3
-  maxPlayerSpeed: 6
+  maxDifficultyTime: 60
+  minPlayerSpeed: 4
+  maxPlayerSpeed: 10
   minSpawnInterval: 3
   maxSpawnInterval: 10
   minGapSize: 8.8
   maxGapSize: 12
   minScoreRate: 1
-  maxScoreRate: 5
+  maxScoreRate: 50

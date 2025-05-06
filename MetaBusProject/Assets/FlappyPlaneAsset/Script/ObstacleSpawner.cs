@@ -5,14 +5,17 @@ using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
 {
-        [SerializeField] private Transform PlayerPos;//플레이어 좌표
-   [SerializeField] private Obstacle[] obstacles;
+    [SerializeField] private Transform PlayerPos;//플레이어 좌표
+    [SerializeField] private Obstacle[] obstacles;
     [SerializeField] private float firstpos_x;//처음 지점
-     [SerializeField] private float Firstdistance_x;//처음 양옆 간격 지정
+    [SerializeField] private float Firstdistance_x;//처음 양옆 간격 지정
 
-    int num=0;
+    int num = 0;
+
+    DifficultyManager dm; //DifficultyManager 캐싱
     void Start() //처음 자리 배치
     {
+        dm = DifficultyManager.Instance;
         obstacles[0].transform.position = new Vector3(firstpos_x, 0, 0);
         obstacles[0].SetPosObstacle();
         for(int i=0;i<obstacles.Length-1;i++)
@@ -31,13 +34,13 @@ public class ObstacleSpawner : MonoBehaviour
         if (PlayerPos.position.x > obstacles[num].transform.position.x +10)
         {
             if(num==0){ //첫번째 장애물일때만 마지막 장애물의 다음 위치로 이동
-            obstacles[num].transform.position= obstacles[obstacles.Length-1].transform.position + new Vector3(DifficultyManager.Instance.CurrentSpawnInterval, 0f, 0f);
+            obstacles[num].transform.position= obstacles[obstacles.Length-1].transform.position + new Vector3(dm.CurrentSpawnInterval, 0f, 0f);
             obstacles[num].SetPosObstacle();
             num++; 
             return;
             }
             //나머지 장애물은 공통되게 이동
-            obstacles[num].transform.position = obstacles[num-1].transform.position + new Vector3(DifficultyManager.Instance.CurrentSpawnInterval, 0f, 0f);
+            obstacles[num].transform.position = obstacles[num-1].transform.position + new Vector3(dm.CurrentSpawnInterval, 0f, 0f);
             obstacles[num].SetPosObstacle();
             num++;
             if(num>6)num=0;//배열 한사이클을 다 돌면 초기화
