@@ -34,18 +34,18 @@ public class FlappyUI : MonoBehaviour
 
     void Update()
     {
-            sum +=0.01f+(dm.combo*dm.CurrentScoreRate)/1000;
+        sum += 0.01f + (dm.combo * dm.CurrentScoreRate) / 1000;
         RealTimescoreTxt.text = sum.ToString("N0");
 
-                RecordscoreTxt.text = dm.CurrentScoreRate.ToString("N1");
-        comboTxt.text = dm.combo.ToString();
-        timeTxt.text = dm.elapsedTime.ToString("N1");
+
     }
 
     public void Endgame()
     {
-                gameOverUI.SetActive(true);
-                float num=dm.combo*dm.CurrentScoreRate;
+        gameOverUI.SetActive(true);
+        RecordscoreTxt.text = sum.ToString("N0");
+        comboTxt.text = dm.combo.ToString();
+        timeTxt.text = dm.elapsedTime.ToString("N1");
 
     }
 }
