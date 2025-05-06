@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: NewWeightedTable
   m_EditorClassIdentifier: Assembly-CSharp::WeightedTable
-  objects: []
+  objects:
+  - prefab: {fileID: 3882815204888798152, guid: 016dd9f8e89928246832750571dff303, type: 3}
+    weight: 50
+  - prefab: {fileID: 5099816650063687877, guid: b949b6e3a0fc311448590baae8f1e951, type: 3}
+    weight: 50
+  - prefab: {fileID: 8039758009722094978, guid: 75addcf71a930ef4bac909c0e799ed0f, type: 3}
+    weight: 100
