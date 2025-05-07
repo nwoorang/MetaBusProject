@@ -9,20 +9,22 @@ public class FlappyUI : MonoBehaviour
     public TextMeshProUGUI RealTimescoreTxt; //실시간 점수
     public TextMeshProUGUI RecordscoreTxt; //기록창 점수
 
-    public TextMeshProUGUI comboTxt;
-    public TextMeshProUGUI timeTxt;
+    public TextMeshProUGUI ComboTxt;
+    public TextMeshProUGUI TimeTxt;
 
-    public GameObject gameOverUI;
+    public GameObject GameOverUI;
     DifficultyManager dm; //DifficultyManager 캐싱
 
     public TextMeshProUGUI TireTxt;
     float sum = 0;
 
     public bool isGameOver; //Update() 구문 제어
+
+    public GameObject RankUI;
     void Start()
     {
         isGameOver = false;
-        gameOverUI.SetActive(false);
+        GameOverUI.SetActive(false);
         dm = DifficultyManager.Instance;
     }
     public void LoadLobbyScene()
@@ -33,6 +35,11 @@ public class FlappyUI : MonoBehaviour
     public void LoadFlappyScene()
     {
         SceneManager.LoadScene("FlappyScene");  // 씬 이름으로 이동
+    }
+
+    public void LoadRankUI()
+    {
+        RankUI.SetActive(!RankUI.activeSelf);
     }
 
     void Update()
@@ -47,10 +54,10 @@ public class FlappyUI : MonoBehaviour
     public void Endgame()
     {
         isGameOver = true;
-        gameOverUI.SetActive(true);
+        GameOverUI.SetActive(true);
         RecordscoreTxt.text = sum.ToString("N0");
-        comboTxt.text = dm.combo.ToString();
-        timeTxt.text = dm.elapsedTime.ToString("N1");
+        ComboTxt.text = dm.combo.ToString();
+        TimeTxt.text = dm.elapsedTime.ToString("N1");
         if (sum < 10) TireTxt.text = "F";
         else if (sum < 100) TireTxt.text = "E";
         else if (sum < 300) TireTxt.text = "D";
