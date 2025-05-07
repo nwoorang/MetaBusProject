@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 
     public float flapForce = 6f;
     float forwardSpeed;
-    public bool isDead{ get; private set; } = false;
+    public bool isDead { get; private set; } = false;
     float deathCooldown = 0f;
 
     bool isFlap = false;
@@ -39,10 +39,7 @@ public class Player : MonoBehaviour
         {
             if (deathCooldown <= 0)
             {
-                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-                {
-                   flappyUI.Endgame();
-                }
+                //내용 없음
             }
             else
             {
@@ -88,5 +85,6 @@ public class Player : MonoBehaviour
         animator.SetInteger("isDie", 1);
         isDead = true;
         deathCooldown = 1f;
+        flappyUI.Endgame();
     }
 }
